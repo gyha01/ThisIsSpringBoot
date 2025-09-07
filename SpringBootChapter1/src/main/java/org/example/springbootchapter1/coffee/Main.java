@@ -1,4 +1,4 @@
-package Coffee;
+package org.example.springbootchapter1.coffee;
 
 public class Main {
     public static void main(String[] args) {

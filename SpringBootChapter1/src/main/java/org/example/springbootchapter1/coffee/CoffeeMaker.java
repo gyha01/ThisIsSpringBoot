@@ -1,8 +1,11 @@
-package Coffee;
+package org.example.springbootchapter1.coffee;
 
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
+
+import java.util.List;
 
 @Component
 public class CoffeeMaker {
@@ -37,10 +40,12 @@ public class CoffeeMaker {
     }*/
 
     @Autowired
-    private CoffeeMachine coffeeMachine;
+    private List<CoffeeMachine> coffeeMachines;
 
     @PostConstruct
     public void makeCoffee(){
-        System.out.println(coffeeMachine.brew());
+        for(CoffeeMachine coffeeMachine : coffeeMachines) {
+            System.out.println(coffeeMachine.brew());
+        }
     }
 }
