@@ -1,1 +1,2 @@
-# This-sSpringBoot
+# 이것은 스프링 부트다 with 자바
+## 내용 정리 및 실습 예정
