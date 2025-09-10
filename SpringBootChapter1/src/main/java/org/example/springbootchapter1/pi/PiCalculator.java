@@ -6,7 +6,6 @@ public class PiCalculator {
         System.out.println(pi.calculate(100000000));
     }
 
-
     double calculate(int points){
         long start = System.currentTimeMillis();
         int circle = 0;
